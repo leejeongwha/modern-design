@@ -6,3 +6,8 @@
 - Command
 - Observer
 - Decorator
+- Chain of Responsibility
+- Factory/Abstract Factory
+- Template Method
+- Adapter
+- Iterator/Visitor
