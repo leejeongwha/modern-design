@@ -18,6 +18,6 @@ T get();
 </pre>
 
 - Lazy Evaluation(지연 평가)와 Supplier :
-    - Supplier는 **지연 평가(lazy evaluation)**에 매우 적합하다.
+    - Supplier는 지연 평가(lazy evaluation)에 매우 적합하다.
     - 예를 들어, 비용이 많이 드는 연산이나 객체 생성을 실제로 필요할 때까지 미루고 싶을 때 Supplier를 사용하면,
       get()이 호출되는 시점에만 연산이 수행된다.
