@@ -5,7 +5,7 @@ import static org.example.moderndesign.chainofresponsibility.LambdaLogger.Logger
 public class Main {
     public static void main(String[] args) {
         leagcy();
-        lamda();
+        lambda();
     }
 
     private static void leagcy() {
@@ -18,7 +18,7 @@ public class Main {
         //chain.log("DEBUG", "This will not be handled.");
     }
 
-    private static void lamda() {
+    private static void lambda() {
         LoggerHandler loggerChain = new LoggerHandler(
             level -> "INFO".equals(level),
             msg -> System.out.println("INFO: " + msg)

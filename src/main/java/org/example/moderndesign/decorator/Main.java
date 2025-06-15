@@ -5,7 +5,7 @@ import java.util.function.Function;
 public class Main {
     public static void main(String[] args) {
         leagcy();
-        lamda();
+        lambda();
     }
 
     private static void leagcy() {
@@ -15,7 +15,7 @@ public class Main {
         System.out.println(upperWithSuffix.format("hello world")); // HELLO WORLD!!!
     }
 
-    private static void lamda() {
+    private static void lambda() {
         // 기본 함수
         Function<String, String> text = s -> s;
 

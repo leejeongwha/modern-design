@@ -3,7 +3,7 @@ package org.example.moderndesign.observer;
 public class Main {
     public static void main(String[] args) {
         leagcy();
-        lamda();
+        lambda();
     }
 
     private static void leagcy() {
@@ -19,7 +19,7 @@ public class Main {
         subject.changeState();
     }
 
-    private static void lamda() {
+    private static void lambda() {
         Subject subject = new Subject();
 
         // 옵저버 등록

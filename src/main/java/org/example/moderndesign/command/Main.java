@@ -3,7 +3,7 @@ package org.example.moderndesign.command;
 public class Main {
     public static void main(String[] args) {
         leagcy();
-        lamda();
+        lambda();
     }
 
     private static void leagcy() {
@@ -14,7 +14,7 @@ public class Main {
         byeButton.press();
     }
 
-    private static void lamda() {
+    private static void lambda() {
         Button helloButton = new Button(() -> System.out.println("Hello!"));
         Button byeButton = new Button(() -> System.out.println("Bye!"));
 

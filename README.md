@@ -10,4 +10,4 @@
 - Factory/Abstract Factory
 - Template Method
 - Adapter
-- Iterator/Visitor
+- Visitor

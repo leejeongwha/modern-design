@@ -3,7 +3,7 @@ package org.example.moderndesign.factory;
 public class Main {
     public static void main(String[] args) {
         leagcy();
-        lamda();
+        lambda();
     }
 
     private static void leagcy() {
@@ -14,11 +14,11 @@ public class Main {
         bikeFactory.testVehicle();
     }
 
-    private static void lamda() {
-        VehicleLamdaFactory carFactory = VehicleLamdaFactory.createFactory(Car::new);
+    private static void lambda() {
+        VehicleLambdaFactory carFactory = VehicleLambdaFactory.createFactory(Car::new);
         carFactory.create().drive();
 
-        VehicleLamdaFactory bikeFactory = VehicleLamdaFactory.createFactory(Bike::new);
+        VehicleLambdaFactory bikeFactory = VehicleLambdaFactory.createFactory(Bike::new);
         bikeFactory.create().drive();
     }
 }
