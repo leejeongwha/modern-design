@@ -14,7 +14,9 @@ public class Main {
     private static void leagcy() {
         LegacyPaymentProcessor legacy = new LegacyPaymentProcessor();
         ModernPaymentGateway gateway = new PaymentProcessorAdapter(legacy);
-        gateway.processPayment(new PaymentDetails("user123", 5000.0));
+
+        PaymentDetails details = new PaymentDetails("user123", 5000.0);
+        gateway.processPayment(details);
     }
 
     /**
@@ -25,6 +27,7 @@ public class Main {
         ModernPaymentGateway gateway = details ->
             new LegacyPaymentProcessor().processPaymentOld(details.getAccountId(), details.getAmount());
 
-        gateway.processPayment(new PaymentDetails("user123", 5000.0));
+        PaymentDetails details = new PaymentDetails("user123", 5000.0);
+        gateway.processPayment(details);
     }
 }

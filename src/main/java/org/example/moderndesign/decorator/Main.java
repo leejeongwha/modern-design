@@ -9,9 +9,16 @@ public class Main {
     }
 
     private static void leagcy() {
+        // 기본 함수
         Text text = new PlainText();
+
+        // 데코레이터 (대문자 변환)
         Text upper = new AllCapsDecorator(text);
+
+        // 데코레이터 (접미사 추가)
         Text upperWithSuffix = new SuffixDecorator(upper, "!!!");
+
+        // 데코레이터 : base → allCaps → addSuffix
         System.out.println(upperWithSuffix.format("hello world")); // HELLO WORLD!!!
     }
 

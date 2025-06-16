@@ -14,9 +14,9 @@
     - ApplicationEvent와 ApplicationListener를 통해 애플리케이션 이벤트 발생 시 여러 리스너에 통지
 - 메시지 큐
     - RabbitMQ, Kafka 등에서 메시지를 발행하고 구독하는 구조
-    - 발행-구독(Pub-Sub) 모델: 메시지 생산자(Producer, 주제 역할)가 메시지를 보내면, 소비자(Consumer, 옵저버 역할)가 구독 후 메시지를 받음
+    - 발행-구독(Pub-Sub) 패턴 : 메시지 생산자(Producer, 주제 역할)가 메시지를 보내면, 소비자(Consumer, 옵저버 역할)가 구독 후 메시지를 받음
 
-### Observer 패턴과 메시지 큐와의 관계
+### Observer 패턴과 발생-구독 패턴과의 관계
 
 - 대상 범위 :
     - **Observer 패턴**: 같은 프로세스 내 객체 간 알림

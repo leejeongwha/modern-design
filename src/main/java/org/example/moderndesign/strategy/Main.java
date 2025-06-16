@@ -21,11 +21,11 @@ public class Main {
     }
 
     private static void lambda() {
-        PaymentHandler.creditCardPayment.pay(100);
-
-        PaymentHandler.payPalPayment.checkValid();
-        PaymentHandler.payPalPayment.pay(200);
-        PaymentHandler.payPalPayment.sendResult();
+        PaymentLambdaStrategy.creditCardPayment.pay(100);
+        
+        PaymentLambdaStrategy.payPalPayment.checkValid();
+        PaymentLambdaStrategy.payPalPayment.pay(200);
+        PaymentLambdaStrategy.payPalPayment.sendResult();
     }
 
     /**

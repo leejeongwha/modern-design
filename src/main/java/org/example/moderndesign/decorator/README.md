@@ -3,6 +3,19 @@
 - 기존 객체의 기능을 변경하거나 확장할 때, 상속(서브클래싱) 대신 객체를 감싸는 방식으로 새로운 기능을 동적으로 추가하는 구조적 디자인 패턴.
 - 말 그대로, 원본 객체에 새로운 장식을 덧붙이듯 기능을 더해주는 것이 특징.
 
+```
+/**
+ * 한 글자씩 읽는 대신, 내부 버퍼에 미리 데이터를 읽어놓아 I/O 성능 향상(시스템 호출 감소)
+ * Reader는 줄 단위 읽기 기능이 없음, BufferReader가 추가
+ */
+try (BufferedReader reader = new BufferedReader(new FileReader("example.txt"))) {
+    String line;
+    while ((line = reader.readLine()) != null) {
+        System.out.println(line);
+    }
+}
+```
+
 ### 구조 요약
 
 - Text 인터페이스: 문자열을 받아 변환하는 format 메서드 정의

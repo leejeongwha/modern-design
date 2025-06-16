@@ -1,6 +1,6 @@
 package org.example.moderndesign.chainofresponsibility;
 
-import static org.example.moderndesign.chainofresponsibility.LambdaLogger.LoggerHandler;
+import org.example.moderndesign.chainofresponsibility.LambdaLogger.LoggerHandler;
 
 public class Main {
     public static void main(String[] args) {
