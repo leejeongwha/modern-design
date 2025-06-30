@@ -3,6 +3,10 @@ package org.example.moderndesign.strategy;
 import java.util.Arrays;
 
 public class Main {
+    /**
+     * ./gradlew clean build해야 변경 내용이 적용됨.
+     * @param args
+     */
     public static void main(String[] args) {
         leagcy();
         lambda();

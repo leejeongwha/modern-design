@@ -15,22 +15,22 @@ public class Main {
 
         chain.log("INFO", "This is an info message.");
         chain.log("ERROR", "This is an error message.");
-        //chain.log("DEBUG", "This will not be handled.");
+        chain.log("DEBUG", "This will not be handled.");
     }
 
     private static void lambda() {
         LoggerHandler loggerChain = new LoggerHandler(
-            level -> "INFO".equals(level),
+            "INFO"::equals,
             msg -> System.out.println("INFO: " + msg)
         );
 
         loggerChain.setNext(new LoggerHandler(
-            level -> "ERROR".equals(level),
+            "ERROR"::equals,
             msg -> System.out.println("ERROR: " + msg)
         ));
 
         loggerChain.handle("INFO", "This is an info message.");
         loggerChain.handle("ERROR", "This is an error message.");
-        //loggerChain.handle("DEBUG", "This will not be handled.");
+        loggerChain.handle("DEBUG", "This will not be handled.");
     }
 }
