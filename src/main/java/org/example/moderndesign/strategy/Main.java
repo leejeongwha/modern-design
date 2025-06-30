@@ -5,6 +5,7 @@ import java.util.Arrays;
 public class Main {
     /**
      * ./gradlew clean build해야 변경 내용이 적용됨.
+     *
      * @param args
      */
     public static void main(String[] args) {
@@ -26,7 +27,7 @@ public class Main {
 
     private static void lambda() {
         PaymentLambdaStrategy.creditCardPayment.pay(100);
-        
+
         PaymentLambdaStrategy.payPalPayment.checkValid();
         PaymentLambdaStrategy.payPalPayment.pay(200);
         PaymentLambdaStrategy.payPalPayment.sendResult();
